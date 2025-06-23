@@ -1,0 +1,27 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  height: 100%;
+}
+
+header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.main-content {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.active {
+  color: red;
+}
