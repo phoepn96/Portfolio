@@ -1,6 +1,60 @@
+:root {
+  --bg-dark: #0d1117;
+  --text-main: #d1d5db;
+  --text-white: #ffffff;
+  --accent: #00cfff;
+  --accent-hover: #38e8ff;
+  --icon-color: #1e90ff;
+  --font: "Inter", system-ui, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font);
+  color: var(--text-main);
+}
+html,
+body {
   height: 100%;
+}
+.main-text {
+  color: var(--text-main);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.low-space {
+  margin-bottom: 10px;
+}
+.mid-space {
+  margin-bottom: 20px;
+}
+
+.big-space {
+  margin-bottom: 40px;
+}
+
+.basic-button {
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--icon-color);
+  font-size: 18px;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basic-button:hover {
+  cursor: pointer;
 }
